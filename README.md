@@ -22,4 +22,4 @@ You will also see any lint errors in the console.
 
 ### Home Page
 
-![Homepage](https://github.com/brkyzc-uk/Piano-Notes-Javascript/blob/main/home-screen.png)
+![Homepage](https://github.com/brkyzc-uk/scorp-react-sample/blob/main/home-screen.png)
