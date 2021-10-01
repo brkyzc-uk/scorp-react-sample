@@ -23,3 +23,17 @@ You will also see any lint errors in the console.
 ### Home Page
 
 ![Homepage](https://github.com/brkyzc-uk/scorp-react-sample/blob/master/homepage.png)
+
+### Links
+
+- Live Site URL: [live](https://scorp-react-sample.vercel.app/)
+
+
+## Deploy with
+
+- Vercel
+
+
+## Author
+
+- Medium - [burak-yazici](https://burak-yazici.medium.com/)
