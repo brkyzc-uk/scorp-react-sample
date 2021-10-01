@@ -1,14 +1,14 @@
 .header {
-    background-color: #000000;
+    background-color: #000;
     padding-right: 79px;
     padding-left: 118px;
 }
 
-@media (max-width: 900px) {
-    .header {
-        padding-left: 0;
+    @media (max-width: 900px) {
+        .header {
+            padding-left: 0;
+        }
     }
-}
 
 .logo {
     font-family: Work Sans, sans-serif;

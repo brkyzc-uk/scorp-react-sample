@@ -72,7 +72,7 @@ export default function Header() {
     const displayDesktop = () => {
         return (
             <Toolbar className={toolbar}>
-                {logoBarDesktop}
+                {logoBar}
                 <div>{getMenuButtons()}</div>
             </Toolbar>
         );
@@ -87,6 +87,7 @@ export default function Header() {
         return (
             <Toolbar style={{
                 paddingRight: 0,
+                
             }}>
                 <Drawer
                     {...{
@@ -101,7 +102,7 @@ export default function Header() {
                 <div style={{
                     width: '100%'
                 }}>
-                    {logoBarMobile}
+                    {logoBar}
                 </div>
 
                 <IconButton
@@ -113,13 +114,13 @@ export default function Header() {
                         onClick: handleDrawerOpen,
                     }}
                 >
-                    <FiMenu/>
+                    <FiMenu style={{color:"white"}} />
                 </IconButton>
             </Toolbar>
         );
     };
 
-    const logoBarDesktop = (
+    const logoBar = (
         <Typography variant="h6" component="h1" className="logo">
             <DiReact size={24} style={{
                 marginBottom: '-5px',
@@ -128,14 +129,6 @@ export default function Header() {
         </Typography>
     );
 
-    const logoBarMobile = (
-        <Typography variant="h6" component="h1" className="logo">
-            {pageName}
-            <DiReact size={24} style={{
-                marginBottom: '-5px',
-            }}/>
-        </Typography>
-    );
 
     const getDrawerChoices = () => {
         return (
@@ -191,10 +184,11 @@ export default function Header() {
                 <Button
                     {...{
                         key: t('homepageTitle'),
-                        color: "inherit",
+                        color: "primary",
                         to: '/',
                         component: RouterLink,
                         className: menuButton,
+                        style:{textTransform:"capitalize", color:"white"}
                     }}
                 >
                     {t('homepageTitle')}
@@ -202,10 +196,11 @@ export default function Header() {
                 <Button
                     {...{
                         key: t('servicesTitle'),
-                        color: "inherit",
+                        color: "primary",
                         to: '/services',
                         component: RouterLink,
                         className: menuButton,
+                        style:{textTransform:"capitalize", color:"white"}
                     }}
                 >
                     {t('servicesTitle')}
@@ -213,10 +208,11 @@ export default function Header() {
                 <Button
                     {...{
                         key: t('contactUsTitle'),
-                        color: "inherit",
+                        color: "primary",
                         to: '/contact-us',
                         component: RouterLink,
                         className: menuButton,
+                        style:{textTransform:"capitalize", color:"white"}
                     }}
                 >
                     {t('contactUsTitle')}
@@ -230,10 +226,10 @@ export default function Header() {
     };
 
     return (
-        <header>
-            <AppBar className="header">
+        <div>
+            <div className="header">
                 {mobileView ? displayMobile() : displayDesktop()}
-            </AppBar>
-        </header>
+            </div>
+        </div>
     );
 }
