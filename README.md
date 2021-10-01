@@ -22,4 +22,4 @@ You will also see any lint errors in the console.
 
 ### Home Page
 
-![Homepage](https://github.com/brkyzc-uk/scorp-react-sample/blob/main/homepage.png)
+![Homepage](https://github.com/brkyzc-uk/scorp-react-sample/blob/master/homepage.png)
